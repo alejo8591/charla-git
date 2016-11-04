@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>movile-list</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-input type="text" placeholder="Search a movie..." (input)="searchMovieDB($event, searchKey)"></ion-input>
+  </ion-item>
+  <ion-list>
+    <ion-item *ngFor="let movie of movies_list" (click)="itemTapped($event, movie)">
+      <span>{{ movie.original_title }}</span>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
