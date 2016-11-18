@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Geolocation</h1>
+  <button ion-button large (click)="loadInfo()">Info</button>
+  <ion-list>
+    <ion-item>{{ data.latitude }}</ion-item>
+    <ion-item>{{ data.longitude }}</ion-item>
+  </ion-list>
+</ion-content>
