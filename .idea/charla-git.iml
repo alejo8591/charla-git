@@ -5,6 +5,8 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/unilab/a5/mnine/lab1/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/unilab/a5/mnine/lab2/platforms" />
       <excludeFolder url="file://$MODULE_DIR$/unilab/a5/mseven/lab1/platforms" />
       <excludeFolder url="file://$MODULE_DIR$/unilab/a5/mseven/lab2/platforms" />
       <excludeFolder url="file://$MODULE_DIR$/unilab/a5/mseven/lab3/platforms" />
