@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Accelerometer</h1>
+  <button ion-button large (click)="loadInfo()">Info</button>
+  <ion-list>
+    <ion-item>{{ data.x }}</ion-item>
+    <ion-item>{{ data.y }}</ion-item>
+    <ion-item>{{ data.z }}</ion-item>
+    <ion-item>{{ data.timestamp }}</ion-item>
+  </ion-list>
+</ion-content>
