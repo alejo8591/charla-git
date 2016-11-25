@@ -9,9 +9,9 @@ import { NavController, Platform } from 'ionic-angular';
 export class HomePage {
 
   public database: SQLite;
-  public users: Array<Object>;
+  public user: Array<Object>;
 
-  constructor(public navCtrl: NavController, private platform: Platform) {
+  constructor(private navController: NavController, private platform: Platform) {
     this.database = new SQLite();
     this.database.openDatabase({name: "data.db", location: "default"}).then(() => {
       this.refresh();
@@ -20,28 +20,24 @@ export class HomePage {
     });
   }
 
+  public add() {
+    this.database.executeSql("INSERT INTO user (firstname, lastname) VALUES ('Alejandro', 'Romero')", []).then((data) => {
+      console.log("INSERTED: " + JSON.stringify(data));
+    }, (error) => {
+      console.log("ERROR: " + JSON.stringify(error.err));
+    });
+  }
+
   public refresh() {
     this.database.executeSql("SELECT * FROM user", []).then((data) => {
-      this.users = [];
+      this.user = [];
       if(data.rows.length > 0) {
-        for(let i = 0; i < data.rows.length; i++) {
-          this.users.push({
-            first_name: data.rows.item(i).first_name,
-            last_name: data.rows.item(i).last_name,
-            phone: data.rows.item(i).phone
-          });
+        for(var i = 0; i < data.rows.length; i++) {
+          this.user.push({firstname: data.rows.item(i).firstname, lastname: data.rows.item(i).lastname});
         }
       }
     }, (error) => {
       console.log("ERROR: " + JSON.stringify(error));
-    });
-  }
-
-  public add() {
-    this.database.executeSql('INSERT INTO user (first_name, last_name, phone) VALUES (?, ?, ?)', ["Alejandro", "Romero", "3005094218"]).then((data) => {
-      console.log("INSERTED: " + JSON.stringify(data));
-    }, (error) => {
-      console.log("ERROR: " + JSON.stringify(error.err));
     });
   }
 

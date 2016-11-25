@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
-import { StatusBar, Splashscreen, SQLite } from 'ionic-native';
-
+import { StatusBar, Splashscreen } from 'ionic-native';
+import {SQLite} from "ionic-native";
 import { HomePage } from '../pages/home/home';
 
 
@@ -14,13 +14,13 @@ export class MyApp {
   constructor(platform: Platform) {
     platform.ready().then(() => {
       StatusBar.styleDefault();
-      Splashscreen.hide();
+
       let db = new SQLite();
       db.openDatabase({
         name: "data.db",
         location: "default"
       }).then(() => {
-        db.executeSql("CREATE TABLE IF NOT EXISTS user (id INTEGER PRIMARY KEY AUTOINCREMENT, first_name TEXT, last_name TEXT, phone TEXT)", {}).then((data) => {
+        db.executeSql("CREATE TABLE IF NOT EXISTS user (id INTEGER PRIMARY KEY AUTOINCREMENT, firstname TEXT, lastname TEXT)", {}).then((data) => {
           console.log("TABLE CREATED: ", data);
         }, (error) => {
           console.error("Unable to execute sql", error);

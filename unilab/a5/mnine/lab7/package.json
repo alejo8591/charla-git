@@ -30,10 +30,10 @@
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
-    "cordova-plugin-console",
     "cordova-plugin-statusbar",
-    "cordova-plugin-splashscreen",
+    "cordova-plugin-console",
     "cordova-plugin-device",
+    "cordova-plugin-splashscreen",
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [
@@ -44,5 +44,5 @@
       "locator": "ios"
     }
   ],
-  "description": "lab6: An Ionic project"
+  "description": "lab7: An Ionic project"
 }
