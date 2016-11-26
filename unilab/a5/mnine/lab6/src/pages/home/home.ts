@@ -14,22 +14,22 @@ export class HomePage {
   constructor(private navController: NavController, private platform: Platform) {
     this.database = new SQLite();
     this.database.openDatabase({name: "data.db", location: "default"}).then(() => {
-      this.refresh();
+      //this.refresh();
     }, (error) => {
       console.log("ERROR: ", error);
     });
   }
 
   public add() {
-    this.database.executeSql("INSERT INTO user (firstname, lastname) VALUES ('Alejandro', 'Romero')", []).then((data) => {
+    this.database.executeSql("INSERT INTO user (firstname, lastname) VALUES (?, ?)", ['Alejandro', 'Romero']).then((data) => {
       console.log("INSERTED: " + JSON.stringify(data));
     }, (error) => {
-      console.log("ERROR: " + JSON.stringify(error.err));
+      console.log("ERROR: " + JSON.stringify(error));
     });
   }
 
   public refresh() {
-    this.database.executeSql("SELECT * FROM user", []).then((data) => {
+    this.database.executeSql("SELECT * FROM user", {}).then((data) => {
       this.user = [];
       if(data.rows.length > 0) {
         for(var i = 0; i < data.rows.length; i++) {
