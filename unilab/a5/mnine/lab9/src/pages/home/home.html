@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Productos</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="alertNewProduct()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngIf="products.length == 0">
+      Sin productos
+    </ion-item>
+    <ion-item-sliding *ngFor="let product of products; let i = index">
+      <ion-item>
+        <ion-input (change)="updateProduct(product, i)" [(ngModel)]="product.name"></ion-input>
+      </ion-item>
+      <ion-item-options side="right" icon-left>
+        <button ion-button color="danger" (click)="deleteProduct(product, i)">
+          <ion-icon name="trash"></ion-icon>
+          Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
