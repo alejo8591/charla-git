@@ -1,0 +1,11 @@
+/* estos comentarios se veran en el precompilado */
+.recuadro {
+  width: 200px; }
+  .recuadro .mensaje {
+    border: 1px solid red; }
+    .recuadro .mensaje .titulo {
+      color: #454545; }
+    .recuadro .mensaje .usuario {
+      border: 2px solid black; }
+      .recuadro .mensaje .usuario .titulo {
+        color: #CCC; }

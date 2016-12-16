@@ -1,0 +1,14 @@
+// sass --watch segundo_uso_bordes.scss:segundo_uso_bordes.css
+@import "_bordes";
+
+div{
+	@include bordes(200px);
+}
+
+div #caja {
+	@include bordes();
+}
+
+div .banner, div #contenedor {
+	@include bordes(10px, 20px);
+}

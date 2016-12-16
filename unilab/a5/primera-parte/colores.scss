@@ -1,0 +1,33 @@
+// Ligthen/Darken
+#ajaxMan{
+	color: lighten(#868686, 20%);
+}
+// utilizando variables como elemento de manejo de colores
+$color: lighten(#555, 53%);
+
+#ajaxMan .boton{
+	color: $color;
+}
+// variable generica
+$colorContainer: #336699;
+// Saturate/Desaturate
+#container {
+	color: saturate($colorContainer, 15%);
+}
+// Desaturate 100%
+$colorClaro: #454545;
+#ajaxGirl {
+	color: grayscale($colorClaro);
+}
+// or
+#ajax-girl{
+	color: desaturate($colorClaro, 100%);
+}
+
+#colores {
+	color: mix(#222, $colorClaro);
+}
+
+#colorines {
+	color: mix(desaturate($colorClaro, 100%), $color);
+}

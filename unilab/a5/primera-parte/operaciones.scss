@@ -1,0 +1,17 @@
+// Definiendo variables
+
+$primary_color: #CCC;
+$secondary_color: #577777;
+$page_width: 965px;
+$page_margin_a: 5px;
+$page_margin_b: 10px;
+
+body {
+	width: $page_width / 2;
+	font-color: $primary_color;
+	margin: $page_margin_a / 2 $page_margin_b + 2 $page_margin_a - 2 $page_margin_b * 2;
+	h1 {
+		font-color: $secondary_color;
+		font-size: $page_margin_b * 3;
+	}
+}

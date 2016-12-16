@@ -1,0 +1,7 @@
+/* este aparecera en el documento preprocesado */
+body {
+  background: white;
+  font-color: #222222;
+  margin: 965px; }
+  body h1 {
+    font-color: #567665; }

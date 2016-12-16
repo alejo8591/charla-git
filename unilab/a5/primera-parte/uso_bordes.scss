@@ -1,0 +1,14 @@
+// sass --watch uso_bordes.scss:uso_bordes.css
+@import "_bordes";
+
+header{
+	@include bordes(6px);
+}
+
+#cajaTexto {
+	@include bordes();
+}
+
+.banner {
+	@include bordes(4px, 11px);
+}

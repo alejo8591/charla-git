@@ -1,0 +1,49 @@
+/*
+@mixin bordes($roundOne: 2px, $roundTwo: 4px){
+  -moz-border-radius :  $roundOne $roundTwo;
+  -webkit-border-radius:  $roundOne $roundTwo;
+  -khtml-border-radius:   $roundOne $roundTwo;
+  -o-border-radius:     $roundOne $roundTwo;
+  border-radius:      $roundOne $roundTwo;
+  border:         $roundOne $roundTwo;
+}
+
+@import "_bordes";
+
+div{
+  @include bordes(200px);
+}
+
+div #caja {
+  @include bordes();
+}
+
+div .banner, div #contenedor {
+  @include bordes(10px, 20px);
+}
+
+*/
+
+div {
+  -moz-border-radius: 200px 4px;
+  -webkit-border-radius: 200px 4px;
+  -khtml-border-radius: 200px 4px;
+  -o-border-radius: 200px 4px;
+  border-radius: 200px 4px;
+  border: 200px 4px; }
+
+div #caja {
+  -moz-border-radius: 2px 4px;
+  -webkit-border-radius: 2px 4px;
+  -khtml-border-radius: 2px 4px;
+  -o-border-radius: 2px 4px;
+  border-radius: 2px 4px;
+  border: 2px 4px; }
+
+div .banner, div #contenedor {
+  -moz-border-radius: 10px 20px;
+  -webkit-border-radius: 10px 20px;
+  -khtml-border-radius: 10px 20px;
+  -o-border-radius: 10px 20px;
+  border-radius: 10px 20px;
+  border: 10px 20px; }
