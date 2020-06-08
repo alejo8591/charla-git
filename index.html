@@ -93,7 +93,6 @@
             <ul>
                 <li><img src="http://git-scm.com/images/icons/linux.png" /> - <b>Linux:</b> Administrador de Paquetes &oacute; binarios dependiendo distribuci&oacute;n</li><br />
                 <li><img src="http://git-scm.com/images/icons/apple.png" /> - <b>MacOS:</b> instalador o MacPorts</li><br />
-                <li><img src="http://git-scm.com/images/icons/solaris.png" /> - <b>Solaris:</b> Administrador de Paquetes &oacute; binarios</li><br />
                 <li><img src="http://git-scm.com/images/icons/windows.png" /> - <b>Windows:</b> Paquete de instalaci&oacute;n ya no requiere Cygwin</li>
             </ul>
         </div>
@@ -111,7 +110,7 @@
             <div class="prepend-1 span-9">
                     <li><b>Checkout:</b> Crear una copia local del repositorio.</li><br />
                     <li><b>Branch: </b> L&iacute;nea de c&oacute;digo por separado con su propia historia.</li><br />
-                    <li><b>Tag: </b> Apunta a cierto espcio especifico en el tiempo en una rama.</li><br />
+                    <li><b>Tag: </b> Apunta a cierto espacio especifico en el tiempo en una rama.</li><br />
                     <li><b>Master: </b> Rama principal por default.</li><br />
             </div>
         </div>
@@ -222,20 +221,21 @@
     
     <div class="step slide" data-x="16000" data-y="-1500">
         <p><b>Protocolos en Git</b></p><hr />
-        <div class="span-20">
-                <li><p><b><em>Protocolo Local</em></b> El repositorio remoto es simplemente otra carpeta en el disco.</p></li><br />
-                <li><p><b><em>Protocolo SSH</em></b> Ss el &uacute;nico protocolo de red con el que puedes facilmente leer y escribir</p></li><br />
-                <li><p><b><em>Protocolo Git</em></b> Similar al protocolo SSH; pero sin ning&uacute;n tipo de autentificaci&oacute;n, es un daemon especial,
-                                                 que escucha por un puerto dedicado (9418)</p></li><br />
-                <li><p><b><em>Protocolo HTTP/S</em></b> Basta con situar el repositorio Git bajo la raiz de los documentos HTTP y
-                                                 preparar el enganche (hook) 'post-update' adecuado.</p></li>
+        <div class="span-20" style="font-size: 24px">
+                <li><b><em>Protocolo Local</em></b> El repositorio remoto es simplemente otra carpeta en el disco.</li><br />
+                <li><b><em>Protocolo SSH</em></b> Ss el &uacute;nico protocolo de red con el que puedes facilmente leer y escribir</p></li><br />
+                <li><b><em>Protocolo Git</em></b> Similar al protocolo SSH; pero sin ning&uacute;n tipo de autentificaci&oacute;n, es un daemon especial,
+                                                 que escucha por un puerto dedicado (9418)</li><br />
+                <li><b><em>Protocolo HTTP/S</em></b> Basta con situar el repositorio Git bajo la raiz de los documentos HTTP y
+                                                 preparar el enganche (hook) 'post-update' adecuado.</li>
         </div>
     </div>
     
     <div class="step slide" data-x="17000" data-y="-1500">
         <p><b>Creando Keys SSH para servidores Remotos (I)</b></p><hr />
         <div class="span-20">
-        <script src="https://gist.github.com/alejo8591/2883860.js"></script>        </div>
+            <script src="https://gist.github.com/alejo8591/2883860.js"></script>
+        </div>
     </div>
     
     <div class="step slide" data-x="18000" data-y="-1500">
@@ -244,23 +244,8 @@
                 <script src="https://gist.github.com/alejo8591/2883928.js"></script>
         </div>
     </div>
-    
+
     <div class="step slide" data-x="19000" data-y="-1500">
-        <p><b>Creando Keys SSH para servidores Remotos (III)</b></p><hr />
-        <div class="span-20">
-            <div class="prepend-3 span-5"><p>Account Settings</p></div>
-            <div class="span-10"><img src="https://img.skitch.com/20120420-tp384se95htb13cegmyid6mefi.png" width="200px" /></div><br />
-            <div class="prepend-3 span-5"><p>Item SSH Keys</p></div>
-            <div class="span-10"><img src="https://img.skitch.com/20120506-em2qa89gkpgwdy95qifft4fqpy.png" width="200px" /></div><br />
-            <div class="prepend-3 span-5"><p>Add SSH Keys</p></div>
-            <div class="span-10"><img src="https://img.skitch.com/20120506-qndj5i4nxm6i8kjnpqbt5rrh36.png" width="200px" /></div><br />
-            <div class="prepend-3 span-5"><p>Ingresando Key</p></div>
-            <div class="span-10"><img src="https://img.skitch.com/20120506-ebr5399wtbwewni4eb9nxdisdy.png" width="200px" /></div><br />
-            <div class="prepend-3 span-5"><p>Add Key</p></div>
-            <img src="https://img.skitch.com/20120506-d5a9fqrwk7i6dnpuf2drchaw5e.png" width="200px" />
-        </div>
-    </div>
-    <div class="step slide" data-x="20000" data-y="-1500">
         <p><b>Ramificaciones (Branching) en Git (I)</b></p><hr />
         <div class="span-20">
           <p><b><em>Que significa?</em></b> Cuando se ha tomado la rama principal de desarrollo (master)
@@ -270,7 +255,7 @@
         </div>
     </div>
     
-    <div class="step slide" data-x="21000" data-y="-1500">
+    <div class="step slide" data-x="20000" data-y="-1500">
         <p><b>Ramificaciones (Branching) en Git (II)</b></p><hr />
         <div class="span-20">
           <p><b><em>Trabajando con un caso de estudio</em></b></p>
@@ -285,7 +270,7 @@
         </div>
     </div>
     
-    <div class="step slide" data-x="22000" data-y="-1500">
+    <div class="step slide" data-x="21000" data-y="-1500">
         <p><b>Ramificaciones (Branching) en Git (III)</b></p><hr />
         <div class="span-20">
           <p>Creando Rama llamada <b><em>"bug"</em></b></p>
@@ -294,7 +279,7 @@
         </div>
     </div>
     
-    <div class="step slide" data-x="23000" data-y="-1500">
+    <div class="step slide" data-x="22000" data-y="-1500">
         <p><b>Ramificaciones (Branching) en Git (III)</b></p><hr />
         <div class="span-20">
           <p>Trabajando en la Rama llamada <b><em>"bug"</em></b></p>
@@ -303,7 +288,7 @@
         </div>
     </div>
     
-    <div class="step slide" data-x="24000" data-y="-1500">
+    <div class="step slide" data-x="23000" data-y="-1500">
         <p><b>Merge y Ramificaciones (Branching) en Git (IV)</b></p><hr />
         <div class="span-20">
           <p>Merge de la Rama llamada <b><em>"bug"</em></b> y <b><em>"master"</em></b></p>
@@ -311,21 +296,18 @@
            <div class="prepend-3 span-15"><img src="http://gitguru.com/wp-content/uploads/2009/02/sd_merge.png" width="480px" /></div>
         </div>
     </div>
-    <div class="step slide" data-x="25000" data-y="-1500">
+    <div class="step slide" data-x="24000" data-y="-1500">
         <p><b>Gestionando Ramificaciones (Branching) en Git (IV)</b></p><hr />
         <div class="span-20">
          <script src="https://gist.github.com/alejo8591/2885674.js"></script>
         </div>
     </div>
     
-    <div class="step slide" data-x="26000" data-y="-1500">
-        <p><b>Continuando con Git</b></p><hr />
-        <q>Si no estas usando git que estas esperando?</q>
-        <div class="span-20">
-            <div class="prepend-5 span-15"><img src="http://girlgeekintraining.com/wp-content/uploads/2010/12/shaft-git-299x300.png" width="300px" /></div>
-        </div>
+    <div class="step slide" data-x="25000" data-y="-1500">
+        <p><b>Seguiremos explorando Git</b></p><hr />
+        <q class="center-field">¡Gracias!</q>
     </div>
-    
+
     <!--
         
         This is an example of step element being scaled.
